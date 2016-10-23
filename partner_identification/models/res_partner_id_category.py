@@ -11,7 +11,7 @@
 
 
 from openerp import api, models, fields
-from openerp.exceptions import ValidationError, UserError
+from openerp.exceptions import ValidationError, Warning as UserError
 from openerp.tools.safe_eval import safe_eval
 from openerp.tools.translate import _
 

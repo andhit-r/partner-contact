@@ -6,6 +6,7 @@ from openerp.tests.common import TransactionCase
 
 
 class TestPartnerSaleRisk(TransactionCase):
+
     def setUp(self):
         super(TestPartnerSaleRisk, self).setUp()
         self.env.user.groups_id |= self.env.ref('base.group_sale_manager')

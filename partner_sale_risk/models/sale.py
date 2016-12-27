@@ -8,9 +8,9 @@ from openerp import api, fields, models, _
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-    invoice_amount = fields.Monetary(
+    invoice_amount = fields.Float(
         compute='_compute_invoice_amount', store=True)
-    invoice_pending_amount = fields.Monetary(
+    invoice_pending_amount = fields.Float(
         compute='_compute_invoice_amount', store=True)
 
     @api.multi

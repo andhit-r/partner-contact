@@ -10,9 +10,9 @@ class ResPartner(models.Model):
 
     risk_sale_order_include = fields.Boolean(
         string='Include Sales Orders', help='Full risk computation')
-    risk_sale_order_limit = fields.Monetary(
+    risk_sale_order_limit = fields.Float(
         string='Limit Sales Orders', help='Set 0 if it is not locked')
-    risk_sale_order = fields.Monetary(
+    risk_sale_order = fields.Float(
         compute='_compute_risk_sale_order', store=True,
         string='Total Sales Orders Not Invoiced',
         help='Total not invoiced of sales orders in Sale Order state')
